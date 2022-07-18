@@ -9,5 +9,18 @@
 <body>
     <h2>하이퍼링크 상대경로 테스트</h2>
     test0.html
+<!-- 2)하위폴더? 하위폴더명/파일명으로 함 test0.html에서 확인
+        test0.html 현재파일이 위치한 폴더는 vs의 파위폴더로 가는겅우
+-->
+
+
+day1 폴더 파일로 링크 : <a href="day1/0start.html">0start.html</a><br>
+sibling 폴더 파일로 링크 : <a href="sibling/test1.html">test1.html</a>
+
+day1 폴더 파일로 링크 : <a href="./day1/0start.html">0start.html</a><br>
+sibling 폴더 파일로 링크 : <a href="./sibling/test1.html">test1.html</a><br>
+sibling 폴더 파일(절대경로)로 링크 : <a href="file:///C:/koreait/VS/sibling/test1.html">test1.html</a><br>
+
+
 </body>
 </html>
