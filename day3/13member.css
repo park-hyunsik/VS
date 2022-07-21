@@ -1,0 +1,66 @@
+/*
+css 스타일은 별도 파일로 작성.
+-> 사용하는 html 문서에서는 link 태그로 이파일을 설정
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Hi+Melody&display=swap');
+*{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: medium;
+}
+table{
+
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+td{
+    padding: 10px;
+
+}
+/*tr > td:nth-child(1) {
+    background-color: rgb(163, 39, 153);
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+*/
+label.title{
+    /* #cc6699는 #c69*/
+    background-color: #c69;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    /* 인라인 요소는 너비가 적용 안됨. block 요소처럼 너비높이가 적용되게 dispaly 변경*/
+    width: 80%;
+    display: inline-block;
+    padding: 10px;
+}
+button{
+    padding: 7px 15px;
+    margin: 15px 7px;
+    background-color: rgb(194,14,104);
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*pseudo(의사)*/
+button:hover {
+    background-color: blue;
+
+}
+label.mpt:hover{
+    cursor: pointer;
+}
+tr:last-child > td {
+    background-color: white;
+    text-align: center;
+}
+input[type=text],input[type=password],input[type=email] {
+    width: 60%;
+}
+input,select{
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}

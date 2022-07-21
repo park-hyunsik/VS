@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid gray;
+            font-size:1.1em;
+
+        }
+        table{
+            width:400px;
+
+        }
+        /*자식요소 tr중 1번째 것 찾아서 그것의 자식 td 요소 선택*/
+        tr:nth-child(1) > td {
+            width: 100px;
+            background-color: bisque;
+        }
+        table:nth-child(3)
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    
+        </table>
+
+        <!-- td 합치기(span) : 옆에있는 칸과 합치기 colspan 속성, 아래있는 칸과 합치기 rowspan 속성 
+                            속성값은 합쳐지는 칸의 갯수-->
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td rowspan="2">3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">5</td>
+                                    <td rowspan="2">6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td colspan="2">8</td>
+                                </tr>
+                            </table>
+
+</body>
+
+</html>

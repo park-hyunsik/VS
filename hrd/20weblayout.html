@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day4_layout</title>
+    <link rel="stylesheet" href="20weblayout.css">
+</head>
+<body>
+    <header>
+        <!-- header-->
+        <h3 style="text-align:center;">홈쇼핑 회원관리 </h3>
+    </header>
+    <nav>
+        <!-- nav-->
+        <ul>
+            <!-- a 태그의 링크가 url 이 아닌 자바스크립트 함수 실행-->
+        <li><a href="javascript:link1()">회원등록</a></li>
+        <li><a href="javascript:link2()">회원목록조회</a></li>
+        <li><a href="javascript:link3()">회원매출조회</a></li>
+        <li style="margin: left 40px;"><a href="javascript:home()">홈으로</a></li>
+        <li><a href="javascript:link4()">갤러리</a></li>
+    </ul>
+</nav>
+    <main>
+        <!-- main-->
+        <iframe src="main.html" frameborder="0"
+        width="100%" height="100%" id="main"></iframe>
+
+    </main>
+    <footer>
+        <!-- footer-->
+        HRDKOREA Copyright&copy;2022 All rights reserved. Human Resources Development Service
+        of korea.
+
+    </footer>
+<script>
+    function link1() { //자바스크립트 함수 link1()
+        //id속성값이 'main'인 iframe 요소를 가져와서 src속성값을 변경하기
+        document.getElementById('main').src = '/day3/14hrdform.html';
+    }
+    function link2() {
+        document.getElementById('main').src = '/day3/15hrdtable.html';
+    }
+    function link3() {
+        document.getElementById('main').src = 'sales.html';
+    }
+    function link4() {
+        document.getElementById('main').src = 'gallery.html';
+    }
+    function home() {
+        document.getElementById('main').src = 'main.html';
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Day2_css</title>
+    <style>
+        /* 블록요소의 선 굵기와 모양,내부/외부 여백 
+        블럭요소의 스타일을 이용해서 웹페이지의 레이아웃을 만듬
+        블록요소의 기본 너비는? 기본 높이는? 컨텐츠 내용만큼.*/
+        ul{
+            /*선모양은 border-위치-style +선굵기 boder-위치-width+선색상 border-위치-color*/
+            border-top: 2px dotted cyan;
+            border-right:1px double;
+            border-bottom: 1px dashed; 
+            border-left: 1px solid; /*선모양: solid 실선, double 이중선*/
+
+            /*padding 은 블럭요소의 내부여백*/
+            padding-top: 20px;
+            padding-right:  20px;
+            padding-bottom: 20px;
+            padding-left: 20px; /* li 태그에 적용된 여백이 있어서 확인 안되는 중*/
+            
+            
+            /* margin 은 블럭요소의 외부 여백 */
+            margin-top: 40px;
+            margin-right: 60px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        li{
+            margin : 20px 40px;
+        }
+        p{
+            /* 위 오른 아래 왼 선 모두 적용되는 케이스 */
+            border: 2px dashed tomato;
+            /* 시계방향으로 설정. 공통값일때는 한번만 */
+            padding: 20px;
+            margin : 40px 60px 50px 50px;
+            /* 블럭요소의 너비 크기 */
+            width:  400px;
+
+        }
+        h3{
+            border: 1px solid;
+            border-color: blue blueviolet brown chartreuse;
+            /*border_width : 시계방향으로 설정
+            border-style : 시계방향으로 설정
+            첫번째 값 20 px 위, 아래 두번쨰 값은 60px 왼 오*/
+            padding:20px 400px;
+        }
+    </style>
+
+</head>
+<body>
+   <h3>CSS란? </h3>
+    <p>CSS 는 HTML 문서의 스타일을 지정하는데 사용하는 언어입니다. CSS는 HTML 요소가 어떻게
+    표시되어야 하는지 설명합니다.</p>
+<ul>
+    <li >CSS 는 Cascading Style Sheets 의 약자입니다.</li>
+    <li>CSS 작성은 태그에서 1)style 속성 사용하거나 또는 2) style 태그에 작성</li>
+    <li>style 태그에서는 특정요소에 적용할 선택자가 필요합니다. 참고로 style 태그는 head 안에 작성합니다</li>
+    <li>CSS는 한번에 여러 웹페이지(html파일)에 적용될 수 있습니다.</li>
+    <li>확장자 css는 별도로 외부파일에 css를 작성할때 사용합니다.</li>
+    <li>CSS 프로퍼티는 글꼴 크기,색상, 배경이미지, 테두리 등등이 있습니다.모든 태그에 공통적인것</li>
+    <li>또는 특정태그에만 적용되는 것을 구별해서 사용합니다.</li>
+</ul>
+</body>
+</html>
